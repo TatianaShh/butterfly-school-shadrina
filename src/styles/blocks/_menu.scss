@@ -1,0 +1,25 @@
+.menu {
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 33px;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-light;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+}

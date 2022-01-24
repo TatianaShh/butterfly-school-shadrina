@@ -1,0 +1,16 @@
+.portfolio {
+  padding: 130px 0;
+}
+
+.portfolio-inner {
+  @include container;
+}
+
+.portfolio-title {
+  margin-bottom: 100px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 87px;
+  color: $color-dark;
+}

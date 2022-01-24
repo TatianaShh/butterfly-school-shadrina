@@ -1,0 +1,36 @@
+.butterfly {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -50px;
+  margin-right: -10px;
+}
+
+.butterfly-item {
+  list-style: none;
+  padding: 0 $half-gap;
+}
+
+.butterfly-item-wrap {
+  position: relative;
+}
+
+.butterfly-img {
+  position: relative;
+  flex-basis: 25%;
+}
+
+.butterfly-item-desc {
+  position: absolute;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 63px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  line-height: 33px;
+}
+

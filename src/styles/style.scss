@@ -2,6 +2,16 @@
 @import "common/_variables";
 @import "common/_fonts";
 @import "common/_common";
+@import "common/_mixins";
 
 // blocks
+@import "blocks/_header";
+@import "blocks/_menu";
 @import "blocks/_promo";
+@import "blocks/_button";
+@import "blocks/_portfolio";
+@import "blocks/_butterflies";
+@import "blocks/_order";
+@import "blocks/_form";
+@import "blocks/_footer";
+@import "blocks/_social";

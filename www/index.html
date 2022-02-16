@@ -11,20 +11,28 @@
 <header class="header">
   <div class="header-inner">
     <div class="header-wrap">
-      <a href="#" class="logo">Butterfly</a>
+      <a href="#" class="logo header-logo">Butterfly</a>
       <nav class="menu">
         <ul>
           <li>
-            <a href="butterfly.html">Каталог</a>
+            <button>
+              <a href="catalog.html">Каталог</a>
+            </button>
           </li>
           <li>
-            <a href="reviews.html">Отзывы</a>
+            <button>
+              <a href="reviews.html">Отзывы</a>
+            </button>
           </li>
           <li>
-            <a href="contacts.html">Контакты</a>
+            <button>
+              <a href="contacts.html">Контакты</a>
+            </button>
           </li>
           <li>
-            <a href="faq.html">FAQ</a>
+            <button>
+              <a href="faq.html">FAQ</a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -33,14 +41,14 @@
 </header>
 
 <main>
-  <section class="promo" style="background-image: url('images/promo-background.jpg');">
-    <div class="promo-inner">
-      <div class="promo-info" >
-        <h1 class="promo-title">
-          Индивидуальный пошив галстуков-бабочек
-        </h1>
-        <div class="button-wrap">
-          <button class="button">Заказать бабочку</button>
+  <section class="promo">
+    <div class="promo-fade">
+        <div class="promo-inner">
+          <div class="promo-info" >
+            <h1 class="promo-title">
+              Индивидуальный пошив галстуков-бабочек
+            </h1>
+            <a class="button promo-button" href="product.html">Заказать бабочку</a>
         </div>
       </div>
     </div>
@@ -50,43 +58,45 @@
     <div class="portfolio-inner">
       <h2 class="portfolio-title">Наши работы</h2>
 
-      <ul class="butterfly">
-        <li class="butterfly-item">
-          <figure class="butterfly-item-wrap">
-           <img src="images/butterfly-1.jpg" alt="бабочка из каталога" class="butterfly-img">
-            <figcaption class="butterfly-item-desc">
-              Cиняя бабочка
-            </figcaption>
+      <ul class="product">
+        <li class="product-item">
+          <figure class="product-item-wrap">
+            <a href="#">
+              <img src="images/butterfly-1.jpg" alt="бабочка из каталога" class="product-img">
+              <span class="product-item-desc">Cиняя бабочка</span>
+            </a>
           </figure>
         </li>
 
-        <li class="butterfly-item">
-          <figure class="butterfly-item-wrap">
-            <img src="images/butterfly-2.jpg" alt="бабочка из каталога" class="butterfly-img">
-            <figcaption class="butterfly-item-desc">
-              Набор с бабочкой
-            </figcaption>
+        <li class="product-item">
+          <figure class="product-item-wrap">
+            <a href="#">
+              <img src="images/butterfly-2.jpg" alt="бабочка из каталога" class="product-img">
+              <span class="product-item-desc">Набор с бабочкой
+              </span>
+            </a>
           </figure>
         </li>
 
-        <li class="butterfly-item">
-          <figure class="butterfly-item-wrap">
-            <img src="images/butterfly-3.jpg" alt="бабочка из каталога" class="butterfly-img">
-            <figcaption class="butterfly-item-desc">
-              Мужчина с бабочкой
-            </figcaption>
+        <li class="product-item">
+          <figure class="product-item-wrap">
+            <a href="#">
+              <img src="images/butterfly-3.jpg" alt="бабочка из каталога" class="product-img">
+              <span class="product-item-desc">Мужчина с бабочкой</span>
+            </a>
           </figure>
         </li>
 
-        <li class="butterfly-item">
-          <figure class="butterfly-item-wrap">
-            <img src="images/butterfly-4.jpg" alt="бабочка из каталога" class="butterfly-img">
-            <figcaption class="butterfly-item-desc">
-              Котик с бабочкой
-            </figcaption>
+        <li class="product-item">
+          <figure class="product-item-wrap">
+            <a href="#">
+              <img src="images/butterfly-4.jpg" alt="бабочка из каталога" class="product-img">
+              <span class="product-item-desc">Котик с бабочкой</span>
+            </a>
           </figure>
         </li>
-      </ul>
+
+        <a href="catalog.html" class="button catalog-button">Все бабочки</a>
     </div>
   </section>
 
@@ -99,21 +109,31 @@
         согласует удобное время для встречи. На встрече он снимет мерки
         и поможет определиться с тканью.</p>
 
-    <div class="form-wrap">
-      <label for="name" class="form form-field-name">
-        <span class="form-label">Ваше имя</span>
-        <input id="name" name="name" type="text">
-      </label>
+        <form action="" class="form-order">
+          <div class="form-order-field">
+            <label for="name" class="form-order-label">Имя</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              class="form-order-input"
+            />
+          </div>
 
-      <label for="tel" class="form form-field-tel">
-        <span class="form-label">Телефон</span>
-        <input id="tel" name="tel" type="tel">
-      </label>
+          <div class="form-order-field">
+            <label for="phone" class="form-order-label">Телефон</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              class="form-order-input"
+            />
+          </div>
 
-      <button class="button button-form">
-        Заказать
-      </button>
-    </div>
+          <div class="form-order-field">
+            <button class="button form-button">Заказать</button>
+          </div>
+        </form>
 
     </div>
   </section>
@@ -122,7 +142,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-wrap">
-      <a href="#" class="footer-logo">Butterfly</a>
+      <a href="#" class="logo">Butterfly</a>
       <span class="footer-phone">+7 812 800-80-80</span>
 
       <ul class="social">
@@ -147,6 +167,9 @@
     </div>
   </div>
 </footer>
+
+<script src="scripts/jquery-3.6.0.min.js"></script>
+<script src="scripts/script.js"></script>
 
 </body>
 </html>

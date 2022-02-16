@@ -1,25 +1,28 @@
-.butterfly {
+.product {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -50px;
-  margin-right: -10px;
+  padding: 0 0;
+  margin-left: -$half-gap;
+  margin-right: -$half-gap;
 }
 
-.butterfly-item {
+.product-item {
   list-style: none;
-  padding: 0 $half-gap;
-}
-
-.butterfly-item-wrap {
-  position: relative;
-}
-
-.butterfly-img {
-  position: relative;
   flex-basis: 25%;
+  width: 304px;
+  padding: $half-gap $half-gap;
 }
 
-.butterfly-item-desc {
+.product-item-wrap {
+  position: relative;
+}
+
+.product-img {
+  display: block;
+  position: relative;
+}
+
+.product-item-desc {
   position: absolute;
   margin: auto;
   padding-top: 15px;
@@ -29,6 +32,7 @@
   bottom: 0;
   width: 100%;
   height: 63px;
+  color: $color-light;
   background-color: rgba(0, 0, 0, 0.4);
   font-size: 24px;
   line-height: 33px;

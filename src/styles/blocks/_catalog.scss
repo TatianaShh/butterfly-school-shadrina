@@ -1,0 +1,28 @@
+.catalog {
+  padding-top: 222px;
+  padding-bottom: 168px;
+}
+
+.catalog-inner {
+  @include container;
+}
+
+.catalog-title {
+  @include title-section;
+}
+
+.catalog-option-list {
+  padding: 80px 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.catalog-option-item {
+  margin: 0 25px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

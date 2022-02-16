@@ -8,6 +8,13 @@ $color-accent: #FF2D2D;
 
 // indents
 $gap: 20px;
-$half-gap: $gap / 2;
+$half-gap: calc($gap / 2);
 
 // breakpoints
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1268px;
+
+$mobile-max: $tablet - 1;
+$tablet-max: $desktop - 1;

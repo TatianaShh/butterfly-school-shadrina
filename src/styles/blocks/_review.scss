@@ -1,0 +1,41 @@
+.review {
+  padding: 222px 0 130px;
+}
+
+.review-inner {
+  @include container
+}
+
+.review-title {
+  @include title-section;
+}
+
+.review-item {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-ava {
+  padding-right: $half-gap;
+  flex-basis: 24.99%;
+}
+
+.review-text {
+  padding-left: $half-gap;
+  flex-basis: 41.65%;
+}
+
+.review-name {
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: normal;
+}
+
+.review-quote {
+  padding-top: 40px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+}

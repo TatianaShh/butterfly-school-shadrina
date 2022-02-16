@@ -8,3 +8,25 @@ body {
   font-family: $font;
 }
 
+.logo {
+  padding: 16px 0;
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  text-decoration: none;
+  color: $color-light;
+
+  @media (max-width: $tablet-max) {
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

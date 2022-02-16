@@ -1,0 +1,37 @@
+.accordion {
+  margin-top: 40px;
+  border: 1px solid rgba(255, 45, 45, 0.2);
+  background-repeat: 4px;
+}
+
+.accordion-text {
+  display: none;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 30px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 49px;
+  color: $color-dark;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-text {
+  padding: 0 30px 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+
+  & > * {
+    margin-top: 25px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
